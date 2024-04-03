@@ -4,45 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma Collection Apple</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">iPhone</a></li>
-                <li><a href="#">iPad</a></li>
-                <li><a href="#">Mac</a></li>
-                <li><a href="#">Accessoires</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Ma Collection Apple</h1>
+            <nav>
+                <ul>
+                    <li><a href="#iphone">iPhone</a></li>
+                    <li><a href="#ipad">iPad</a></li>
+                    <li><a href="#mac">Mac</a></li>
+                    <li><a href="#accessoires">Accessoires</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="product">
-            <h2>iPhone</h2>
-            <!-- Insérez ici vos produits iPhone -->
+        <section id="iphone" class="section">
+            <div class="container">
+                <h2>iPhone</h2>
+                <div class="grid">
+                    <!-- Insérez ici vos produits iPhone -->
+                </div>
+            </div>
         </section>
 
-        <section class="product">
-            <h2>iPad</h2>
-            <!-- Insérez ici vos produits iPad -->
+        <section id="ipad" class="section">
+            <div class="container">
+                <h2>iPad</h2>
+                <div class="grid">
+                    <!-- Insérez ici vos produits iPad -->
+                </div>
+            </div>
         </section>
 
-        <section class="product">
-            <h2>Mac</h2>
-            <!-- Insérez ici vos produits Mac -->
+        <section id="mac" class="section">
+            <div class="container">
+                <h2>Mac</h2>
+                <div class="grid">
+                    <!-- Insérez ici vos produits Mac -->
+                </div>
+            </div>
         </section>
 
-        <section class="product">
-            <h2>Accessoires</h2>
-            <!-- Insérez ici vos accessoires Apple -->
+        <section id="accessoires" class="section">
+            <div class="container">
+                <h2>Accessoires</h2>
+                <div class="grid">
+                    <!-- Insérez ici vos accessoires Apple -->
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Ma Collection Apple. Tous droits réservés.</p>
+        <div class="container">
+            <p>&copy; 2024 Ma Collection Apple. Tous droits réservés.</p>
+        </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="../javascripts/script.js"></script>
 </body>
 </html>
