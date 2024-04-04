@@ -6,35 +6,67 @@ body {
     background-color: #f2f2f2;
 }
 
+header {
+    background-color: #121212;
+    color: #fff;
+    padding: 5px 0;
+}
+
 .container {
     width: 90%;
     margin: 0 auto;
 }
 
-header {
-    background-color: #000;
-    color: #fff;
-    padding: 20px 0;
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-header h1 {
-    font-size: 24px;
+.logo {
+    float: left;
+    padding-top: 16px;
+}
+
+.logo img {
+    width: 35px;
+    padding-right: 11px;
+    padding-top: 22px;
+}
+
+.title {
+    float: left;
+    padding-top: 14px;
+    font-size: 21px;
+}
+
+nav {
+    background-color: #121212;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 48px;
+    text-align: center;
+    
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
 main {
@@ -64,6 +96,11 @@ main {
     transition: transform 0.3s ease;
 }
 
+.product p {
+    text-align: center;
+    margin-top: 10px;
+}
+
 .product:hover {
     transform: translateY(-5px);
 }
@@ -72,6 +109,45 @@ main {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+}
+
+main nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    background-color: #f2f2f2;
+}
+
+main nav ul li {
+    position: relative;
+    display: inline-block;
+    padding-top: 5px;
+}
+
+main nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #000;
+}
+
+main nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+main nav ul ul li {
+    display: block;
+}
+
+main nav ul li:hover > ul {
+    display: block;
 }
 
 /* Ajoutez ici vos propres styles pour chaque produit */
