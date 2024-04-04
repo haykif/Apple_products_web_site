@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
   Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -149,5 +153,3 @@ main nav ul ul li {
 main nav ul li:hover > ul {
     display: block;
 }
-
-/* Ajoutez ici vos propres styles pour chaque produit */
