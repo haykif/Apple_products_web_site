@@ -115,6 +115,11 @@ main {
     border-radius: 5px;
 }
 
+.section .container nav {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
 main nav ul {
     list-style-type: none;
     padding: 0;
