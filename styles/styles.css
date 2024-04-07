@@ -158,3 +158,16 @@ main nav ul ul li {
 main nav ul li:hover > ul {
     display: block;
 }
+
+footer {
+    background-color: #121212;
+    color: #FFF;
+}
+
+footer .copyright {
+    float: left;
+}
+
+footer .author {
+    float: right;
+}
