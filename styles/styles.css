@@ -168,6 +168,26 @@ footer .copyright {
     float: left;
 }
 
+footer .copyright .kiz_change-color:link {
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer .copyright .kiz_change-color:visited {
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer .copyright .kiz_change-color:hover {
+    color: cyan;
+    text-decoration: none;
+}
+
+footer .copyright .kiz_change-color:active {
+    color: fuchsia;
+    text-decoration: none;
+}
+
 footer .author {
     float: right;
 }
