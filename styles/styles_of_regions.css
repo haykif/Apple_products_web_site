@@ -2,12 +2,22 @@
     scroll-behavior: smooth;
 }
 
-body {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
-  Helvetica, Arial, "Lucida Grande", sans-serif;
+body, html {
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    height: 100%;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    flex: 1;
 }
 
 header {
@@ -53,7 +63,6 @@ nav ul {
     margin: 0;
     padding: 48px;
     text-align: center;
-    
 }
 
 nav ul li {
@@ -159,46 +168,50 @@ main nav ul li:hover > ul {
     display: block;
 }
 
-footer {
+.site-footer {
     background-color: #121212;
     color: #FFF;
     padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    flex-shrink: 0;
 }
 
-footer .container {
+.site-footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
-footer .copyright,
-footer .author,
-footer .region {
+.site-footer .copyright,
+.site-footer .author,
+.site-footer .region {
     flex: 1;
     text-align: center;
 }
 
-footer .copyright {
+.site-footer .copyright {
     text-align: left;
 }
 
-footer .region {
+.site-footer .region {
     text-align: right;
 }
 
-footer .copyright .kiz_change-color:link,
-footer .copyright .kiz_change-color:hover,
-footer .copyright .kiz_change-color:visited {
+.site-footer .copyright .kiz_change-color:link,
+.site-footer .copyright .kiz_change-color:hover,
+.site-footer .copyright .kiz_change-color:visited {
     color: #FFF;
     text-decoration: none;
 }
 
-footer .copyright .kiz_change-color:active {
+.site-footer .copyright .kiz_change-color:active {
     color: fuchsia;
     text-decoration: none;
 }
 
-footer .region a:link,
-footer .region a:visited {
+.site-footer .region a:link,
+.site-footer .region a:visited {
     color: #FFF;
 }
