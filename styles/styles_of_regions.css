@@ -168,6 +168,13 @@ main nav ul li:hover > ul {
     display: block;
 }
 
+.grid a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    color: #121212;
+}
+
 .site-footer {
     background-color: #121212;
     color: #FFF;
@@ -181,7 +188,6 @@ main nav ul li:hover > ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
 .site-footer .copyright,
@@ -197,18 +203,6 @@ main nav ul li:hover > ul {
 
 .site-footer .region {
     text-align: right;
-}
-
-.site-footer .copyright .kiz_change-color:link,
-.site-footer .copyright .kiz_change-color:hover,
-.site-footer .copyright .kiz_change-color:visited {
-    color: #FFF;
-    text-decoration: none;
-}
-
-.site-footer .copyright .kiz_change-color:active {
-    color: fuchsia;
-    text-decoration: none;
 }
 
 .site-footer .region a:link,
