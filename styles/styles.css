@@ -201,4 +201,9 @@ footer .copyright .kiz_change-color:active {
 footer .region a:link,
 footer .region a:visited {
     color: #FFF;
+    text-decoration: none;
+}
+
+footer .region:hover {
+    text-decoration: underline;
 }

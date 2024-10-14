@@ -208,4 +208,9 @@ main nav ul li:hover > ul {
 .site-footer .region a:link,
 .site-footer .region a:visited {
     color: #FFF;
+    text-decoration: none;
+}
+
+footer .region:hover {
+    text-decoration: underline;
 }
