@@ -372,6 +372,6 @@ footer .region:hover {
         margin-bottom: 0;
     }
     .section {
-        margin-top: auto;
+        margin-top: -10%;
     }
 }
