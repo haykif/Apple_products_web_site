@@ -6,8 +6,8 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
-    Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    background-color: #f2f2f2;
 }
 
 .page-container {
@@ -24,6 +24,13 @@ header {
     background-color: #121212;
     color: #fff;
     padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.container-logo {
+    margin-right: 10%;
+    margin-left: 5%;
 }
 
 .container {
@@ -35,6 +42,11 @@ header {
     content: "";
     display: table;
     clear: both;
+}
+
+.container-nav {
+    width: 100%;
+    display: flex;
 }
 
 .logo {
@@ -60,7 +72,7 @@ nav {
 
 nav ul {
     list-style-type: none;
-    margin: 0;
+    margin-left: -15%;
     padding: 48px;
     text-align: center;
 }
@@ -213,4 +225,153 @@ main nav ul li:hover > ul {
 
 footer .region:hover {
     text-decoration: underline;
+}
+
+/* Media queries de fdp pour les téléphones */
+@media only screen and (max-width: 850px) {
+
+    .title {
+        float: left;
+        padding-top: 8px;
+        font-size: 21px;
+    }
+
+    header {
+        display: block;
+
+    }
+    header nav ul {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 1px 0; /* Espacement entre les li */
+    }
+
+    header nav ul li a {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #121212;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    /* Style pour la liste déroulante */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #121212;
+        min-width: 160px;
+        z-index: 1;
+        border-radius: 5px;
+    }
+
+    .dropdown-content a {
+        color: #fff;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .container-logo {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .container-nav {
+        width: 100%;
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    nav ul {
+        padding: 20px;
+        margin-left: 0%;
+    }
+
+    nav ul li {
+        font-size: 1.2em;
+    }
+
+    main nav ul li a {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .logo img {
+        width: 25px;
+        padding-top: 18px;
+    }
+
+    .lejpg img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Nouveau style pour les boutons */
+    main nav ul li {
+        display: block;
+        margin-bottom: 10px; /* Ajout d'une marge entre les boutons */
+    }
+
+    main nav ul ul {
+        display: none;
+        position: relative; /* Changement de la position pour afficher les sous-menus correctement */
+        top: auto;
+        left: auto;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+
+    main nav ul li:hover > ul {
+        display: block;
+    }
+
+    footer .copyright {
+        font-size: 14px;
+    }
+
+    footer .author {
+        font-size: 14px;
+    }
+}
+
+/* Pro Max iPhones */
+@media only screen and (max-width: 480px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* Affiche deux produits par ligne sur les petits écrans */
+        grid-gap: 10px; /* Réduit l'espace entre les produits */
+    }
+
+    .product {
+        width: calc(83% - 5px); /* Chaque produit occupe la moitié de la largeur de la grille, moins la moitié de l'espace entre les produits */
+    }
+
+    nav ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .section {
+        margin-top: -10%;
+    }
 }
