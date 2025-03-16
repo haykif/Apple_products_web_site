@@ -249,13 +249,7 @@ footer .region:hover {
 }
 
 /* Media queries de fdp pour les téléphones */
-@media only screen and (max-width: 850px) {
-
-    .title {
-        float: left;
-        padding-top: 8px;
-        font-size: 21px;
-    }
+@media only screen and (max-width: 500px) {
 
     header {
         display: block;
@@ -340,13 +334,15 @@ footer .region:hover {
         font-size: 16px;
     }
 
-    .title {
-        font-size: 18px;
-    }
-
     .logo img {
         width: 25px;
         padding-top: 10px;
+    }
+
+    .title {
+        float: left;
+        padding-top: 8px;
+        font-size: 15px;
     }
 
     .lejpg img {

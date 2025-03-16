@@ -51,19 +51,23 @@ header {
 
 .logo {
     float: left;
-    padding-top: 16px;
+    padding-top: 3px;
 }
 
 .logo img {
     width: 35px;
-    padding-right: 11px;
-    padding-top: 22px;
+    padding-right: 15px;
+    padding-top: 0px;
 }
 
 .title {
     float: left;
-    padding-top: 14px;
+    padding-top: 0px;
     font-size: 21px;
+}
+
+h1 {
+    margin: 0px;
 }
 
 nav {
@@ -228,12 +232,12 @@ footer .region:hover {
 }
 
 /* Media queries de fdp pour les téléphones */
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 700px) {
 
     .title {
         float: left;
         padding-top: 8px;
-        font-size: 21px;
+        font-size: 15px;
     }
 
     header {
@@ -319,7 +323,7 @@ footer .region:hover {
 
     .logo img {
         width: 25px;
-        padding-top: 18px;
+        padding-top: 10px;
     }
 
     .lejpg img {
