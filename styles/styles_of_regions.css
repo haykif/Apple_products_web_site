@@ -232,7 +232,7 @@ footer .region:hover {
 }
 
 /* Media queries de fdp pour les téléphones */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 500px) {
 
     .title {
         float: left;
