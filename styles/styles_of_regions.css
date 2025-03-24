@@ -317,13 +317,9 @@ footer .region:hover {
         font-size: 16px;
     }
 
-    .title {
-        font-size: 18px;
-    }
-
     .logo img {
         width: 25px;
-        padding-top: 10px;
+        padding-top: 2px;
     }
 
     .lejpg img {
